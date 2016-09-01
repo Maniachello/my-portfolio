@@ -1,0 +1,72 @@
+.navbar-default {height: 100px;
+		max-width: 1170px;
+		border-radius:0;
+		
+
+		
+
+
+		.navbar-header 
+			{@include font-type($header-font, 18px, 10px, 0px, #949F4C);
+			}
+		
+		.navbar-collapse {@include font-type($subheader-font, 18px, 10px, 0px, #949F4C);
+			font-weight: bold;
+			text-transform: uppercase;
+			padding:24px 24px 60px 24px;
+			position: relative;
+			i{margin: 15px 30px;}
+
+			a {&:hover {border-bottom: 4px solid #949f4c;
+				}}
+			}
+
+	}
+
+	.intro {background-color: white;
+		margin: 240px 0 0 0;
+		padding: 25px;
+		box-shadow: 21px 32px 0px -2px rgba(255,158,23,1);
+
+  
+
+		h1 {@include font-type($header-font, 42px, auto, 0px, #454b53);}
+
+			span {@include font-type($subheader-font, 18px, auto, 0px, #454b53);
+				font-weight: bold;
+				text-transform: uppercase;
+				letter-spacing: 0;
+				
+			}
+		hr {border: none; /* Убираем границу для браузера Firefox */
+    color: #949F4C; /* Цвет линии для остальных браузеров */
+    background-color: #949F4C; /* Цвет линии для браузера Firefox и Opera */
+    height: 5px; /* Толщина линии */
+    width: 50px;
+    display: inline-block;
+    position: left;}
+
+		p {
+			@include font-type($main-font, 14px, 20px, 0px, #6e7680);
+		}
+
+		ul {list-style-type: none;
+
+
+			li {display: inline-block;
+
+				strong {@include font-type($subheader-font, 42px, auto, 0px, #454b53);
+				
+				}
+
+				span {
+					@include font-type($subheader-font, 14px, 20px, 0px, #6e7680);
+					
+					sup {@include font-type($subheader-font, 14px, 20px, 0px, #6e7680);}
+					
+				}
+
+				p {}
+
+			}
+		}
